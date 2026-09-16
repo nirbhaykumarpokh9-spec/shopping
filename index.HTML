@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping | Premium E-Commerce</title>
+    
+    <meta name="description" content="Discover premium tech and lifestyle products perfectly curated for you. Shop directly on Flipkart.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">shopmart</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Categories</a></li>
+            <li><a href="#products">Deals</a></li>
+        </ul>   
+        <div class="nav-actions">
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Search products...">
+                <button class="icon-btn" aria-label="Search">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </button>
+            </div>
+            <button class="icon-btn" aria-label="Cart">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Discover Premium Tech & Lifestyle</h1>
+            <p>Curated finest products from top brands seamlessly linked for you. Find what you love and buy it directly on Flipkart.</p>
+            <button class="cta-btn" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">Explore Collection</button>
+        </div>
+    </header>
+
+    <main class="products-section" id="products">
+        <div class="section-header">
+            <h2>Trending Products</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="electronics">Electronics</button>
+                <button class="filter-btn" data-filter="fashion">Fashion</button>
+                <button class="filter-btn" data-filter="home">Home & Living</button>
+                <button class="filter-btn" data-filter="fitness">Fitness</button>
+            </div>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 shopping. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
